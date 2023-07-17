@@ -1,0 +1,1943 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.middle {
+    height: 100%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p,a {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 1vw;
+
+    }
+
+    .container {
+        padding: 0 0.3vw !important;
+        width:89vw !important;
+        margin: 0 auto;
+        max-width:90vw !important;
+    }
+
+    .row>* {
+        padding-left: .84vw;
+        padding-right: .84vw;
+    }
+
+    .row {
+        margin: 0 -.9vw;
+    }
+
+    .container-fluid {
+        margin: 0 4.6vw;
+        padding: 0;
+    }
+}
+
+
+.navbar{
+    position: absolute !important;
+    width: 100%;
+    padding: 1vw 0 !important;
+    margin-top: 0;
+}
+.navbar .navbar-brand img {
+    width:20vw;
+   
+}
+
+.navbar .navbar-nav .nav-item a {
+    font-weight: 400;
+    color: #fff;
+    font-size:1.3vw;
+    margin: 0 0.7vw;
+    position: relative;
+}
+
+
+.navbar .navbar-nav {
+    padding: 0.6vw 1.6vw 0.6vw 0vw;
+    border-radius: 1.2vw;
+    margin-right:4vw;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-nav .nav-item i {
+    color: #fff;
+    padding-right: 0.5vw;
+}
+.icon_bg a i{
+    color: #fff;
+    padding: 0.3vw 0.5vw;
+    background: #666;
+    border-radius: 1.8vw;
+    font-size: 1vw;
+}
+.icon_bg a{
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.2vw;
+    margin: 0 0.7vw;
+    position: relative;
+    opacity: 0.9;
+}
+
+.navbar .navbar-nav .nav-item .sec{
+    color:#000 !important;
+}
+.navbar .navbar-nav .nav-item .brochure-btn i {
+   
+    /* padding-right: 0.5vw; */
+}
+
+
+.navbar .navbar-nav .nav-item a::after {
+    background-color: #f9c905;
+    border-radius: 0.5vw;
+    padding: 0.8vw 1.2vw;
+    color: #fff;
+    position: relative;
+    left: 1.6vw;
+    top: 0;
+    bottom: 0;
+    font-weight: 700;
+}
+
+.navbar .navbar-nav .nav-item .brochure-btn {
+    background-color: #f9c905;
+    border-radius: 0.5vw;
+    padding: 0.8vw 1vw;
+    color: #000;
+    position: relative;
+    left: 1vw;
+    top: 0;
+    bottom: 0;
+    font-size: 1.1vw;
+    font-weight: 700;
+}
+/* .navbar-expand-lg .navbar-nav .nav-link{
+    padding-right:0 !important;
+    padding-left:0 !important;
+} */
+
+.banner{
+    background-image: url("../img/banner.jpg");
+  width: 100%;
+  height:100vh;
+    background-size: cover;
+    padding:  0 0 2vw;
+}
+.banner-content{
+    padding-top:11.5vw;
+}
+.index-left-content{
+    margin-left:0;
+}
+
+.index-left-content h2 {
+    font-weight: 600;
+    color: #fff;
+    font-size: 3.4vw;
+    margin-bottom: 1vw;
+    line-height: 4.2vw;
+    letter-spacing: 0.2vw;
+    padding: 0 2vw 0 0;
+}
+
+.index-left-content h2 span {
+    color: #11a63d; 
+}
+.index-left-content p {
+    font-size: 1.3vw;
+    color: #fff;
+    line-height:2vw;
+    padding: 0;
+    font-weight: 400;
+    margin-bottom: 3vw;
+    margin-left: 0.4vw;
+    font-style:italic;
+    opacity: 0.8;
+}
+
+
+.index-left-content h3 {
+    font-size: 3.5vw;
+    text-transform: capitalize;
+    margin-bottom: 0.6vw;
+}
+
+.index-left-content h4 {
+   
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.8vw;
+    letter-spacing: 0.1vw;
+    margin-bottom: 2vw;
+}
+
+.index-left-content a {
+    text-decoration: none;
+    color: #fff;
+    border: 0.2vw solid #f9c905;
+    border-radius:2vw;
+    padding:1.15vw 2.5vw;
+    font-size: 1.1vw;
+    font-family: 'DM Sans', sans-serif;
+    transition: 0.5s all;
+    font-weight: 700;
+    letter-spacing: 0.04vw;
+    margin-left: 0.4vw;
+}
+.index-left-content a i {
+    margin-left: 1vw;
+}
+.index-left-content a:hover {
+    background-color: #f9c905;
+    color: #fff;
+}
+
+
+.index-right-content h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight:400;
+    color: #000;
+    font-size: 1.5vw;
+    padding: 2vw 0.8vw 1vw;
+    text-align: center;
+    margin-bottom: 0.7vw;
+    text-transform: uppercase;
+   
+}
+.index-right-content h2 span {
+    color: #000;
+    font-weight:700;
+}
+
+.index-right-content {
+    background:#fff;
+    border-radius: 1vw;
+}
+
+
+.index-right-content form {
+    padding: 0 2.1vw 1vw;
+}
+
+.form-control:focus {
+    border-color: inherit !important;
+    outline: 0 !important;
+    box-shadow: inherit !important;
+}
+
+.form-control {
+    padding: 1.1vw 0.9vw !important;
+    font-size: 0.9vw !important;
+    line-height: inherit !important;
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    border-radius: 0.4vw !important;
+    margin-bottom: 0.9vw !important;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600 !important;
+}
+
+.form-select {
+    padding: 1.1vw 0.9vw !important;
+    font-size: 0.9vw !important;
+    line-height: inherit !important;
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    border-radius: 0.4vw !important;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600 !important;
+}
+
+.form-select .index-input .input::placeholder {
+    color: #adadb7 !important;
+}
+
+.index-right-content .index-input {
+    margin-bottom: 0.5vw;
+}
+
+.index-right-content .form-btn {
+    border-color: #11a63d;
+    color: #11a63d;
+    border-radius: 3vw;
+       font-size: 1.3vw;
+    padding: 1.2vw 0vw;
+    width: fit-content;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1.6vw;
+    width: 100%;
+}
+.index-right-content .form-btn:active {
+    background-color: #11a63d;
+    color: #fff;
+    
+}
+.index-right-content .form-btn:focus {
+    background-color: #11a63d;
+    color: #fff;
+    
+}
+.btn:hover {
+    background-color: #11a63d !important;
+    color: #fff !important;
+}
+.index-right-content {
+    width:100%vw !important;
+    padding: 0 !important;
+    height: fit-content;
+    /* margin-left:7vw; */
+}
+
+/* -------------------------ouevales---------- */
+
+
+
+/* Well com to cgc section */
+.wel_cgc{
+    padding: 7vw 0;
+    background-image: url('../img/wel_bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.wel_cgc .wel_containt .img img{
+    width: 100%;
+}
+.wel_containt .heading h1{
+    font-size: 3.3vw;
+    color: #fff;
+    padding: 0;
+    margin: 0 0 1vw 0;
+    font-weight: 800;
+}
+.wel_containt .heading h1 span{
+    color: #f7b700;
+}
+.wel_containt .heading p{
+    color: #fff;
+    opacity: 0.8;
+    font-size: 1vw;
+    padding: 0;
+    margin: 0.9vw 0;
+    line-height: 1.8vw;
+}
+.wel_containt .heading {
+    padding: 0 2.5vw 0 0;
+}
+.wel_containt .heading .butns button{
+    border: none;
+    margin-top: 2vw;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    padding: 1.1vw 2vw;
+    background: #fff;
+    font-weight: 800;
+    border-radius: 10vw;
+}
+.wel_containt .heading .butns .col_yellow{
+    background-color: #f9c905;
+    margin-left: 1vw;
+}
+
+
+/* Services Section */
+.services{
+    padding: 6vw 0;
+}
+.services .heading h1{
+    font-size: 3.3vw;
+    padding: 0;
+    margin: 0 0 2vw 0;
+    font-weight: 700;
+}
+.services .img-card{
+    position: relative;
+    padding: 0.8vw;
+}
+.services .img-card img{
+    width: 100%;
+}
+.services .img-card .img_content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 1.5vw;
+}
+.services .img-card .img_content .text_con{
+    border: 0.1vw solid #fff;
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
+}
+.services .img-card .img_content .text_con h3{
+    color: #fff;
+    padding: 0;
+    /* margin: 7vw 0 0.5vw 0; */
+    margin: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.7vw;
+}
+.services .img-card .img_content .text_con p{
+    color: #fff;
+    padding: 0;
+    margin: 1vw 0 0 0;
+    font-size: 1.1vw;
+    opacity: 0.9;
+}
+.position-text{
+    position: absolute;
+    bottom: 3vw;
+    width: 21vw;
+}
+.services .butn_quto button{
+    border: none;
+    margin-top: 3vw;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    padding: 1.1vw 3vw;
+    background-color: #f9c905;
+    font-weight: 800;
+    border-radius: 10vw;
+}
+
+
+/* why choose us */
+
+.why_choose{
+    padding: 6vw 0;
+    background-image: url('../img/whychoose_bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.why_choose .heading h1{
+    font-size: 3.3vw;
+    padding: 0;
+    margin: 0 0 3vw 0;
+    font-weight: 700;
+    color: #fff;
+}
+.why_choose .card{
+    padding: 1vw 1.5vw;
+    border-radius: 1vw;
+    background-color: #fff;
+    border: none;
+}
+.why_choose .card p{
+    font-size: 1vw;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+.why_choose .card .numb{
+    margin-top: 1vw;
+}
+.why_choose .card .numb h1{
+    font-size: 1.8vw;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+.why_choose .card .numb img{
+    width: 1.8vw;
+    height: 1.8vw;
+}
+.why_choose .choose_img{
+    padding: 3vw;
+    margin: 4vw 0 0 0 ;
+    background-color: #fff;
+    position: relative;
+}
+.choose_img .heading_ap h1{
+    font-size: 2.1vw;
+    font-weight: 800;
+    padding: 0;
+    margin: 0 0 1vw 0;
+}
+
+.choose_img .heading_ap p{
+    font-size: 1vw;
+    font-weight: 400;
+    padding: 0;
+    margin: 1vw 0;
+}
+
+.choose_img .heading_ap button{
+    border: none;
+    margin-top: 2vw;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    padding: 1.1vw 3vw;
+    background-color: #f9c905;
+    font-weight: 800;
+    border-radius: 10vw;
+}
+.choose_img .side_img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.choose_img .side_img img{
+    width: 35vw;
+}
+
+
+/* Testimonails Section */
+.testimonials{
+    padding: 6vw 0;
+}
+.testimonials .heading h1{
+    font-size: 3.5vw;
+    font-weight: 800;
+    padding: 0;
+    margin: 0 0 3vw 0;
+}
+.testimonials .test_card{
+    background-color: #f9c905;
+    padding: 5vw 2vw 2vw;
+    position: relative;
+    border-radius: 0.5vw;
+    margin: 0.8vw;
+}
+.testimonials .test_card .coma_img{
+    position: absolute;
+    top: 0.5vw;
+    left: 0.5vw;
+}
+.testimonials .test_card .coma_img img{
+    width: 5vw;
+    opacity: 0.5;
+}
+.testimonials .test_card p{
+    font-size: 1.1vw;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+.testimonials .test_card .user_prof{
+    display: flex;
+    margin-top: 3vw;
+}
+.testimonials .test_card .user_prof img{
+    width: 4vw;
+    height: 4vw;
+    margin-right: 1vw;
+}
+.testimonials .test_card .user_prof .text h4{
+    font-size: 1.3vw;
+    padding: 0;
+    margin: 0 0 0.2vw 0;
+    font-weight: 500;
+}
+.testimonials .test_card .user_prof .text p{
+    font-size: 1vw;
+    padding: 0;
+    margin: 0 ;
+    font-weight: 400;
+}
+.testimonials .slick-dots{
+    bottom: -4vw;
+}
+.testimonials .slick-dots button:before {
+    font-size: 8px;
+}
+
+
+/* footer section starts */
+
+footer{
+    padding: 3vw 0 0 0;
+    background-image: url('../img/footer_bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+footer .footer-logo {
+    display: grid;
+}
+footer .footer-logo img{
+    font-size: 4vw;
+    margin-bottom: 2vw;
+}
+footer .footer-logo a{
+    padding: 0;
+    margin: 0.3vw 0 ;
+    font-size: 0.9vw;
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
+
+}
+footer .footer-icons h4{
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin: 0 0 1.5vw 0;
+    padding: 0;
+    color: #f9c905;
+}
+footer .footer-icons i{
+    padding: 0.3vw 0.6vw;
+    background: #fff;
+    font-size: 1.2vw;
+    border-radius: 5vw;
+    margin: 0 0.3vw;
+}
+footer .footer-icons a{
+    font-size: 1vw;
+    padding: 0;
+    margin: 0.5vw 0;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+footer hr{
+    border-top: 0.1vw solid #fff;
+    padding: 0;
+    margin: 3vw 0 0;
+    opacity: 0.5;
+}
+footer .second_text{
+    padding: 1vw;
+}
+footer .second_text p{
+    padding: 0;
+    font-size: 0.9vw;
+    color: #fff;
+    opacity: 0.8;
+    margin: 0;
+}
+
+
+/* our Values Section */
+.our_values{
+    padding: 7vw 0;
+}
+.our_values .heading{
+    position: relative;
+}
+.our_values .heading h1{
+    font-size: 3vw;
+    font-weight: 800;
+    padding: 0;
+    margin: 0 0 10vw;
+}
+.our_values .heading p{
+    font-size: 1vw;
+    padding: 0;
+    margin: 0;
+    color: #333;
+}
+.our_values .vision_card{
+    background-color: #f9c905;
+    padding: 2vw;
+    border-radius: 0.5vw;
+}
+
+.our_values .vision_card .heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7vw;
+}
+.our_values .vision_card .heading h2{
+    font-size: 1.8vw;
+    padding: 0;
+    margin: 0;
+    font-weight: 600
+}
+.our_values .vision_card .heading img{
+    width: 5vw;
+}
+.our_values .vision_card p{
+    font-size: 1vw;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* sticky bar */
+.sticky_bar{
+    position: fixed;
+    right: 0;
+    top: 21vw;
+    width: 11vw;
+    background: #004da3;
+    padding: 1vw;
+    border-radius: 5vw 0 0 5vw;
+    z-index: 99;
+}
+.sticky_bar button{
+    padding: 0;
+    margin: 0;
+    font-size: 1vw;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    border: none;
+    background-color: inherit;
+}
+
+
+/* modal */
+.modal-open{
+    overflow: auto !important;
+    padding-right: 0 !important;
+}
+.parents_modal .modal-body{
+    padding: 2vw;
+}
+.parents_modal .modal-body .heading h1{
+    text-align: center;
+    font-size: 2vw;
+    padding: 0;
+    margin: 0 0 2vw;
+    font-weight: 600;
+}
+.parents_modal .modal-body .butns button{
+    border: none;
+    padding: 0.7vw 3vw;
+    background-color: inherit;
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin: 1vw 0.5vw;
+    border-radius: 5vw;
+}
+.parents_modal .modal-body .butns .can_btn{
+    border: 0.1vw solid #f7b700;
+}
+.parents_modal .modal-body .butns .save_btn{
+    background-color:  #f7b700;
+}
+
+
+/* sticky Header */
+
+
+.header {
+    position: fixed !important;
+      z-index: 1000;
+    width: 100%; 
+      padding: 0;
+      -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+  }
+  
+  .active {
+    background-color: #031b35;
+  }
+
+
+
+
+  @media (max-width: 575.98px){
+
+    .navbar .navbar-nav .nav-item .brochure-btn {
+        border-radius: 31px;
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+    .navbar .navbar-nav .nav-item{
+        margin: 10px 0;
+    }
+    .navbar .navbar-brand img {
+        width: 190px;
+    }
+    .navbar{
+        padding: 14px 0 !important ;
+    }
+    .navbar-toggler i{
+        color: #fff;
+        font-size: 30px;
+    }
+    .active {
+        margin: 25px 0 0;
+    }
+
+    .index-left-content h2{
+        line-height: initial;
+        font-size: 30px;
+    }
+    .index-left-content p{
+        font-size: 15px;
+        margin-top: 20px;
+        line-height: initial;
+        margin-bottom: 40px;
+    }
+    .index-left-content a {
+        border-radius: 42px;
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+
+    .our_values{
+        padding: 50px 0;
+    }
+    .our_values .heading h1{
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+    }
+    .our_values .heading p {
+        font-size: 17px;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .our_values .vision_card {
+        padding: 20px;
+        margin: 10px 0;
+    }
+    .our_values .vision_card .heading h2 {
+        font-size: 25px;
+    }
+    .our_values .vision_card .heading img {
+        width: 50px;
+    }
+    .our_values .vision_card p {
+        font-size: 16px;
+    }
+    .wel_cgc{
+        padding: 50px 0;
+    }
+    .wel_containt .heading h1 {
+        font-size: 30px;
+        margin: 0 0 20px;
+    }
+    .wel_containt .heading p {
+        font-size: 16px;
+        line-height: initial;
+    }
+
+    .wel_containt .heading .butns button {
+        margin-top: 25px;
+        font-size: 14px;
+        padding: 12px;
+    }
+    .wel_cgc .wel_containt .img{
+        margin-top: 30px ;
+    }
+
+    .services{
+        padding: 50px 0;
+    }
+    .services .heading h1 {
+        font-size: 30px;
+        margin: 0 0 20px;
+    }
+    .position-text {
+        bottom: 30px;
+        width: 85%;
+    }
+    .services .img-card .img_content .text_con h3 {
+        font-size: 25px;
+    }
+    .services .img-card .img_content .text_con p {
+        font-size: 16px;
+    }
+    .services .img-card .img_content {
+        padding: 10px;
+    }
+    .services .butn_quto button {
+        margin-top: 30px;
+        font-size: 14px;
+        padding: 10px 31px;
+    }
+
+    .why_choose{
+        padding: 40px 0;
+    }
+    .why_choose .heading h1 {
+        font-size: 30px;
+        margin: 0 0 30px;
+    }
+    .why_choose .card p {
+        font-size: 17px;
+    }
+    .why_choose .card .numb h1 {
+        font-size: 25px;
+    }
+    .why_choose .card .numb img {
+        width: 30px;
+        height: 30px;
+    }
+    .why_choose .card {
+        padding: 25px;
+        border-radius: 5px;
+        margin: 10px 0;
+        height: 90%;
+    }
+    .choose_img .side_img img {
+        display: none;
+    }
+    .choose_img .heading_ap h1 {
+        font-size: 25px;
+        color: #fff;
+    }
+    .choose_img .heading_ap p {
+        font-size: 17px;
+        margin: 15px 0;
+        color: #fff;
+        opacity: 0.8;
+    }
+    .choose_img .heading_ap button {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+    .why_choose .choose_img {
+        background-color: inherit;
+    }
+
+    .testimonials{
+        padding: 40px 0;
+    }
+    .testimonials .heading h1 {
+        font-size: 30px;
+    }
+    .testimonials .test_card p {
+        font-size: 15px;
+    }
+    .testimonials .test_card {
+        padding: 40px 20px 20px;
+    }
+    .testimonials .test_card .coma_img img {
+        width: 50px;
+    }
+    .testimonials .test_card .user_prof img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    .testimonials .test_card .user_prof .text h4 {
+        font-size: 18px;
+    }
+    .testimonials .test_card .user_prof .text p {
+        font-size: 13px;
+    }
+    .testimonials .slick-dots {
+        bottom: -40px;
+    }
+    .navbar-collapse{
+        background-color: #004da3;
+    }
+    .navbar .navbar-nav .nav-item a {
+        font-size: 14px;
+    }
+    .icon_bg a i {
+        font-size: 12px;
+        padding: 5px 8px;
+        border-radius: 40px;
+    }
+    footer {
+        padding: 40px 0 0;
+    }
+    footer .footer-logo img {
+        width: 52px;
+        margin-right: 20px;
+    }
+    footer .footer-logo a {
+        font-size: 12px;
+    }
+    footer .footer-logo {
+        display: block;
+        margin-bottom: 25px;
+    }
+    footer .footer-icons h4 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    footer .footer-icons i {
+        padding: 3px 5px;
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    footer .footer-icons{
+        margin-bottom: 20px;
+    }
+    footer .footer-icons a {
+        font-size: 14px;
+    }
+    footer .second_text p {
+        font-size: 14px;
+    }
+    footer .second_text {
+        padding: 10px 0;
+    }
+
+    .parents_modal .modal-body .heading h1 {
+        font-size: 20px;
+    }
+    .form_fileds .form-control, .form_fileds .form-select{
+        font-size: 14px !important;
+    padding: 10px !important;
+    font-weight: 300 !important;
+    border-radius: 3px !important;
+    margin: 10px 0 !important;
+    }
+    .parents_modal .modal-body .butns button {
+        padding: 7px 40px;
+        font-size: 14px;
+        margin: 20px 5px;
+        border-radius: 36px;
+    }
+    .parents_modal .modal-body {
+        padding: 30px;
+    }
+    
+.sticky_bar {
+    right: 0;
+    top: 250px;
+    width: 90px;
+    /* height: 79px; */
+    border-radius: 6px 0 0 6px;
+}
+.sticky_bar button{
+    font-size: 13px;
+}
+.testimonials .slick-arrow{
+    display: none !important;
+}
+.index-right-content {
+    width: 100% !important;
+    padding: 20px !important;
+    height: auto;
+   margin: 50px 0 0 0;
+}
+.index-right-content h2 {
+    font-size: 22px;
+    margin: 0 0 20px;
+}
+
+.index-input .form-control, .index-input .form-select{
+    font-size: 14px !important;
+padding: 10px !important;
+font-weight: 300 !important;
+border-radius: 3px !important;
+margin: 10px 0 !important;
+}
+.index-right-content .form-btn {
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px;
+}
+.banner{
+    height: auto;
+    padding: 60px 0;
+}
+
+
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px){
+
+
+    
+    .navbar .navbar-brand img {
+        width: 190px;
+    }
+    .navbar{
+        padding: 14px 0 !important ;
+    }
+    .navbar-toggler i{
+        color: #fff;
+        font-size: 30px;
+    }
+    .active {
+        /* margin: 25px 0 0; */
+    }
+
+    .index-left-content h2{
+        line-height: initial;
+        font-size: 30px;
+    }
+    .index-left-content p{
+        font-size: 15px;
+        margin-top: 20px;
+        line-height: initial;
+        margin-bottom: 40px;
+    }
+    .index-left-content a {
+        border-radius: 42px;
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+
+    .our_values{
+        padding: 50px 0;
+    }
+    .our_values .heading h1{
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+    }
+    .our_values .heading p {
+        font-size: 17px;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .our_values .vision_card {
+        padding: 20px;
+        margin: 10px 0;
+    }
+    .our_values .vision_card .heading h2 {
+        font-size: 25px;
+    }
+    .our_values .vision_card .heading img {
+        width: 50px;
+    }
+    .our_values .vision_card p {
+        font-size: 16px;
+    }
+    .wel_cgc{
+        padding: 50px 0;
+    }
+    .wel_containt .heading h1 {
+        font-size: 30px;
+        margin: 0 0 20px;
+    }
+    .wel_containt .heading p {
+        font-size: 16px;
+        line-height: initial;
+    }
+
+    .wel_containt .heading .butns button {
+        margin-top: 25px;
+        font-size: 14px;
+        padding: 12px;
+    }
+    .wel_cgc .wel_containt .img{
+        margin-top: 30px ;
+    }
+
+    .services{
+        padding: 50px 0;
+    }
+    .services .heading h1 {
+        font-size: 30px;
+        margin: 0 0 20px;
+    }
+    .position-text {
+        bottom: 30px;
+        width: 85%;
+    }
+    .services .img-card .img_content .text_con h3 {
+        font-size: 25px;
+    }
+    .services .img-card .img_content .text_con p {
+        font-size: 16px;
+    }
+    .services .img-card .img_content {
+        padding: 10px;
+    }
+    .services .butn_quto button {
+        margin-top: 30px;
+        font-size: 14px;
+        padding: 10px 31px;
+    }
+
+    .why_choose{
+        padding: 40px 0;
+    }
+    .why_choose .heading h1 {
+        font-size: 30px;
+        margin: 0 0 30px;
+    }
+    .why_choose .card p {
+        font-size: 17px;
+    }
+    .why_choose .card .numb h1 {
+        font-size: 25px;
+    }
+    .why_choose .card .numb img {
+        width: 30px;
+        height: 30px;
+    }
+    .why_choose .card {
+        padding: 25px;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+    .choose_img .side_img img {
+        display: none;
+    }
+    .choose_img .heading_ap h1 {
+        font-size: 25px;
+        color: #fff;
+    }
+    .choose_img .heading_ap p {
+        font-size: 17px;
+        margin: 15px 0;
+        color: #fff;
+        opacity: 0.8;
+    }
+    .choose_img .heading_ap button {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+    .why_choose .choose_img {
+        background-color: inherit;
+    }
+
+    .testimonials{
+        padding: 40px 0;
+    }
+    .testimonials .heading h1 {
+        font-size: 30px;
+    }
+    .testimonials .test_card p {
+        font-size: 15px;
+    }
+    .testimonials .test_card {
+        padding: 40px 20px 20px;
+    }
+    .testimonials .test_card .coma_img img {
+        width: 50px;
+    }
+    .testimonials .test_card .user_prof img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    .testimonials .test_card .user_prof .text h4 {
+        font-size: 18px;
+    }
+    .testimonials .test_card .user_prof .text p {
+        font-size: 13px;
+    }
+    .testimonials .slick-dots {
+        bottom: -40px;
+    }
+    .navbar-collapse{
+        background-color: #004da3;
+    }
+    .navbar .navbar-nav .nav-item a {
+        font-size: 14px;
+    }
+    .icon_bg a i {
+        font-size: 12px;
+        padding: 5px 8px;
+        border-radius: 40px;
+    }
+    footer {
+        padding: 40px 0 0;
+    }
+    footer .footer-logo img {
+        width: 52px;
+        margin-right: 20px;
+    }
+    footer .footer-logo a {
+        font-size: 12px;
+    }
+    footer .footer-logo {
+        display: block;
+        margin-bottom: 25px;
+    }
+    footer .footer-icons h4 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    footer .footer-icons i {
+        padding: 3px 5px;
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    footer .footer-icons{
+        margin-bottom: 20px;
+    }
+    footer .footer-icons a {
+        font-size: 14px;
+    }
+    footer .second_text p {
+        font-size: 14px;
+    }
+    footer .second_text {
+        padding: 10px 0;
+    }
+
+    .parents_modal .modal-body .heading h1 {
+        font-size: 20px;
+    }
+    .form_fileds .form-control, .form_fileds .form-select{
+        font-size: 14px !important;
+    padding: 10px !important;
+    font-weight: 300 !important;
+    border-radius: 3px !important;
+    margin: 10px 0 !important;
+    }
+    .parents_modal .modal-body .butns button {
+        padding: 7px 40px;
+        font-size: 14px;
+        margin: 20px 5px;
+        border-radius: 36px;
+    }
+    .parents_modal .modal-body {
+        padding: 30px;
+    }
+    
+.sticky_bar {
+    right: 0;
+    top: 250px;
+    width: 90px;
+    /* height: 79px; */
+    border-radius: 6px 0 0 6px;
+}
+.sticky_bar button{
+    font-size: 13px;
+}
+.testimonials .slick-arrow{
+    display: none !important;
+}
+.index-right-content {
+    width: 100% !important;
+    padding: 20px !important;
+    height: auto;
+   margin: 50px 0 0 0;
+}
+.index-right-content h2 {
+    font-size: 22px;
+    margin: 0 0 20px;
+}
+
+.index-input .form-control, .index-input .form-select{
+    font-size: 14px !important;
+padding: 10px !important;
+font-weight: 300 !important;
+border-radius: 3px !important;
+margin: 10px 0 !important;
+}
+.index-right-content .form-btn {
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px;
+}
+.banner{
+    height: auto;
+    padding: 60px 0;
+}
+
+  }
+
+
+  @media (min-width: 768px) and (max-width: 991.98px){
+
+    .navbar .navbar-nav .nav-item .brochure-btn {
+        border-radius: 31px;
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+    .navbar .navbar-nav .nav-item{
+        margin: 10px 0;
+    }
+    .navbar .navbar-brand img {
+        width: 190px;
+    }
+    .navbar{
+        padding: 14px 0 !important ;
+    }
+    .navbar-toggler i{
+        color: #fff;
+        font-size: 30px;
+    }
+    .active {
+        /* margin: 25px 0 0; */
+    }
+
+    .index-left-content h2{
+        line-height: initial;
+        font-size: 30px;
+    }
+    .index-left-content p{
+        font-size: 15px;
+        margin-top: 20px;
+        line-height: initial;
+        margin-bottom: 40px;
+    }
+    .index-left-content a {
+        border-radius: 42px;
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+
+    .our_values{
+        padding: 50px 0;
+    }
+    .our_values .heading h1{
+        font-size: 30px;
+    }
+    .our_values .heading p {
+        font-size: 17px;
+    }
+    .our_values .vision_card {
+        padding: 20px;
+        margin: 10px 0;
+        height: 100%;
+    }
+    .our_values .vision_card .heading h2 {
+        font-size: 25px;
+    }
+    .our_values .vision_card .heading img {
+        width: 50px;
+    }
+    .our_values .vision_card p {
+        font-size: 16px;
+    }
+    .wel_cgc{
+        padding: 50px 0;
+    }
+    .wel_containt .heading h1 {
+        font-size: 30px;
+        margin: 0 0 20px;
+    }
+    .wel_containt .heading p {
+        font-size: 16px;
+        line-height: initial;
+    }
+
+    .wel_containt .heading .butns button {
+        margin-top: 25px;
+        font-size: 14px;
+        padding: 12px;
+    }
+    .wel_cgc .wel_containt .img{
+        margin-top: 30px ;
+    }
+
+    .services{
+        padding: 50px 0;
+    }
+    .services .heading h1 {
+        font-size: 30px;
+        margin: 0 0 20px;
+    }
+    .position-text {
+        bottom: 30px;
+        width: 85%;
+    }
+    .services .img-card .img_content .text_con h3 {
+        font-size: 25px;
+    }
+    .services .img-card .img_content .text_con p {
+        font-size: 16px;
+    }
+    .services .img-card .img_content {
+        padding: 10px;
+    }
+    .services .butn_quto button {
+        margin-top: 30px;
+        font-size: 14px;
+        padding: 10px 31px;
+    }
+
+    .why_choose{
+        padding: 40px 0;
+    }
+    .why_choose .heading h1 {
+        font-size: 30px;
+        margin: 0 0 30px;
+    }
+    .why_choose .card p {
+        font-size: 17px;
+    }
+    .why_choose .card .numb h1 {
+        font-size: 25px;
+    }
+    .why_choose .card .numb img {
+        width: 30px;
+        height: 30px;
+    }
+    .why_choose .card {
+        padding: 25px;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+    .choose_img .side_img img {
+        display: none;
+    }
+    .choose_img .heading_ap h1 {
+        font-size: 25px;
+        color: #fff;
+    }
+    .choose_img .heading_ap p {
+        font-size: 17px;
+        margin: 15px 0;
+        color: #fff;
+        opacity: 0.8;
+    }
+    .choose_img .heading_ap button {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+    .why_choose .choose_img {
+        background-color: inherit;
+    }
+
+    .testimonials{
+        padding: 40px 0;
+    }
+    .testimonials .heading h1 {
+        font-size: 30px;
+    }
+    .testimonials .test_card p {
+        font-size: 15px;
+    }
+    .testimonials .test_card {
+        padding: 40px 20px 20px;
+    }
+    .testimonials .test_card .coma_img img {
+        width: 50px;
+    }
+    .testimonials .test_card .user_prof img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    .testimonials .test_card .user_prof .text h4 {
+        font-size: 18px;
+    }
+    .testimonials .test_card .user_prof .text p {
+        font-size: 13px;
+    }
+    .testimonials .slick-dots {
+        bottom: -40px;
+    }
+    .navbar-collapse{
+        background-color: #004da3;
+    }
+    .navbar .navbar-nav .nav-item a {
+        font-size: 14px;
+    }
+    .icon_bg a i {
+        font-size: 12px;
+        padding: 5px 8px;
+        border-radius: 40px;
+    }
+    footer {
+        padding: 40px 0 0;
+    }
+    footer .footer-logo img {
+        width: 52px;
+        margin-right: 20px;
+    }
+    footer .footer-logo a {
+        font-size: 12px;
+    }
+    footer .footer-logo {
+        display: block;
+        margin-bottom: 25px;
+    }
+    footer .footer-icons h4 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    footer .footer-icons i {
+        padding: 3px 5px;
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    footer .footer-icons{
+        margin-bottom: 20px;
+    }
+    footer .footer-icons a {
+        font-size: 14px;
+    }
+    footer .second_text p {
+        font-size: 14px;
+    }
+    footer .second_text {
+        padding: 10px 0;
+    }
+
+    .parents_modal .modal-body .heading h1 {
+        font-size: 20px;
+    }
+    .form_fileds .form-control, .form_fileds .form-select{
+        font-size: 14px !important;
+    padding: 10px !important;
+    font-weight: 300 !important;
+    border-radius: 3px !important;
+    margin: 10px 0 !important;
+    }
+    .parents_modal .modal-body .butns button {
+        padding: 7px 40px;
+        font-size: 14px;
+        margin: 20px 5px;
+        border-radius: 36px;
+    }
+    .parents_modal .modal-body {
+        padding: 30px;
+    }
+    
+.sticky_bar {
+    right: 0;
+    top: 250px;
+    width: 90px;
+    /* height: 79px; */
+    border-radius: 6px 0 0 6px;
+}
+.sticky_bar button{
+    font-size: 13px;
+}
+.testimonials .slick-arrow{
+    display: none !important;
+}
+.index-right-content {
+    width: 100% !important;
+    padding: 20px !important;
+    height: auto;
+   margin: 50px 0 0 0;
+}
+.index-right-content h2 {
+    font-size: 22px;
+    margin: 0 0 20px;
+}
+
+.index-input .form-control, .index-input .form-select{
+    font-size: 14px !important;
+padding: 10px !important;
+font-weight: 300 !important;
+border-radius: 3px !important;
+margin: 10px 0 !important;
+}
+.index-right-content .form-btn {
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px;
+}
+.banner{
+    height: auto;
+    padding: 60px 0;
+}
+
+  }
+
+
+
+  @media (min-width: 992px) and (max-width: 1199.98px){
+
+
+    .navbar .navbar-nav .nav-item .brochure-btn {
+        border-radius: 31px;
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+    .navbar .navbar-nav .nav-item{
+        margin: 10px 0;
+    }
+    .navbar .navbar-brand img {
+        width: 190px;
+    }
+    .navbar{
+        padding: 14px 0 !important ;
+    }
+    .navbar-toggler i{
+        color: #fff;
+        font-size: 30px;
+    }
+    .active {
+        /* margin: 25px 0 0; */
+    }
+
+    .index-left-content h2{
+        line-height: initial;
+        font-size: 30px;
+    }
+    .index-left-content p{
+        font-size: 15px;
+        margin-top: 20px;
+        line-height: initial;
+        margin-bottom: 40px;
+    }
+    .index-left-content a {
+        border-radius: 42px;
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+
+    .our_values{
+        padding: 50px 0;
+    }
+    .our_values .heading h1{
+        font-size: 30px;
+    }
+    .our_values .heading p {
+        font-size: 17px;
+    }
+    .our_values .vision_card {
+        padding: 20px;
+        margin: 10px 0;
+        height: 100%;
+    }
+    .our_values .vision_card .heading h2 {
+        font-size: 25px;
+    }
+    .our_values .vision_card .heading img {
+        width: 50px;
+    }
+    .our_values .vision_card p {
+        font-size: 16px;
+    }
+    .wel_cgc{
+        padding: 50px 0;
+    }
+    .wel_containt .heading h1 {
+        font-size: 30px;
+        margin: 0 0 20px;
+    }
+    .wel_containt .heading p {
+        font-size: 16px;
+        line-height: initial;
+    }
+
+    .wel_containt .heading .butns button {
+        margin-top: 25px;
+        font-size: 14px;
+        padding: 12px;
+    }
+    .wel_cgc .wel_containt .img{
+        margin-top: 30px ;
+    }
+
+    .services{
+        padding: 50px 0;
+    }
+    .services .heading h1 {
+        font-size: 30px;
+        margin: 0 0 20px;
+    }
+    .position-text {
+        bottom: 30px;
+        width: 85%;
+    }
+    .services .img-card .img_content .text_con h3 {
+        font-size: 25px;
+    }
+    .services .img-card .img_content .text_con p {
+        font-size: 16px;
+    }
+    .services .img-card .img_content {
+        padding: 10px;
+    }
+    .services .butn_quto button {
+        margin-top: 30px;
+        font-size: 14px;
+        padding: 10px 31px;
+    }
+
+    .why_choose{
+        padding: 40px 0;
+    }
+    .why_choose .heading h1 {
+        font-size: 30px;
+        margin: 0 0 30px;
+    }
+    .why_choose .card p {
+        font-size: 17px;
+    }
+    .why_choose .card .numb h1 {
+        font-size: 25px;
+    }
+    .why_choose .card .numb img {
+        width: 30px;
+        height: 30px;
+    }
+    .why_choose .card {
+        padding: 25px;
+        border-radius: 5px;
+        margin: 10px 0;
+        height: 90%;
+    }
+    .choose_img .side_img img {
+        display: none;
+    }
+    .mobile-none{
+        display: none;
+    }
+    .choose_img .heading_ap h1 {
+        font-size: 25px;
+    }
+    .choose_img .heading_ap p {
+        font-size: 17px;
+        margin: 15px 0;
+        opacity: 0.8;
+    }
+    .choose_img .heading_ap button {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+    .why_choose .choose_img {
+        background-color: #fff;
+    }
+
+    .testimonials{
+        padding: 40px 0;
+    }
+    .testimonials .heading h1 {
+        font-size: 30px;
+    }
+    .testimonials .test_card p {
+        font-size: 15px;
+    }
+    .testimonials .test_card {
+        padding: 40px 20px 20px;
+    }
+    .testimonials .test_card .coma_img img {
+        width: 50px;
+    }
+    .testimonials .test_card .user_prof img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    .testimonials .test_card .user_prof .text h4 {
+        font-size: 18px;
+    }
+    .testimonials .test_card .user_prof .text p {
+        font-size: 13px;
+    }
+    .testimonials .slick-dots {
+        bottom: -40px;
+    }
+    .navbar-collapse{
+        /* background-color: #004da3; */
+    }
+    .navbar .navbar-nav .nav-item a {
+        font-size: 14px;
+    }
+    .icon_bg a i {
+        font-size: 12px;
+        padding: 5px 8px;
+        border-radius: 40px;
+    }
+    footer {
+        padding: 40px 0 0;
+    }
+    footer .footer-logo img {
+        width: 52px;
+        margin-right: 20px;
+    }
+    footer .footer-logo a {
+        font-size: 12px;
+    }
+    footer .footer-logo {
+        display: block;
+        margin-bottom: 25px;
+    }
+    footer .footer-icons h4 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    footer .footer-icons i {
+        padding: 3px 5px;
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    footer .footer-icons{
+        margin-bottom: 20px;
+    }
+    footer .footer-icons a {
+        font-size: 14px;
+    }
+    footer .second_text p {
+        font-size: 14px;
+    }
+    footer .second_text {
+        padding: 10px 0;
+    }
+
+    .parents_modal .modal-body .heading h1 {
+        font-size: 20px;
+    }
+    .form_fileds .form-control, .form_fileds .form-select{
+        font-size: 14px !important;
+    padding: 10px !important;
+    font-weight: 300 !important;
+    border-radius: 3px !important;
+    margin: 10px 0 !important;
+    }
+    .parents_modal .modal-body .butns button {
+        padding: 7px 40px;
+        font-size: 14px;
+        margin: 20px 5px;
+        border-radius: 36px;
+    }
+    .parents_modal .modal-body {
+        padding: 30px;
+    }
+    
+.sticky_bar {
+    right: 0;
+    top: 250px;
+    width: 90px;
+    /* height: 79px; */
+    border-radius: 6px 0 0 6px;
+}
+.sticky_bar button{
+    font-size: 13px;
+}
+.testimonials .slick-arrow{
+    display: none !important;
+}
+.index-right-content {
+    width: 100% !important;
+    padding: 20px !important;
+    height: auto;
+   margin: 0px 0 0 0;
+}
+.index-right-content h2 {
+    font-size: 22px;
+    margin: 0 0 20px;
+}
+
+.index-input .form-control, .index-input .form-select{
+    font-size: 14px !important;
+padding: 10px !important;
+font-weight: 300 !important;
+border-radius: 3px !important;
+margin: 10px 0 !important;
+}
+.index-right-content .form-btn {
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px;
+}
+.banner{
+    height: auto;
+    padding: 60px 0;
+}
+
+  }
